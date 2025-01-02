@@ -21,9 +21,7 @@ export const AccountListTableComponent: React.FC<Props> = (props) => {
         </div>
 
         {accountList.map((account) => (
-          <div key={account.id}>
-            <AccountListItemComponent key={account.id} accountItem={account} />
-          </div>
+          <AccountListItemComponent key={account.id} accountItem={account} />
         ))}
       </div>
     </>
