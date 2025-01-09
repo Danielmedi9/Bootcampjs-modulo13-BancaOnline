@@ -36,7 +36,6 @@ export const MovementListItemComponent: React.FC<Props> = (props) => {
       >
         {movementItem.balance} €
       </span>
-      -
     </div>
   );
 };

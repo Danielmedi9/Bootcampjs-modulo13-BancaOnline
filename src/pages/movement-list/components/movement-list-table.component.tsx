@@ -9,7 +9,6 @@ interface Props {
 
 export const MovementListTableComponent: React.FC<Props> = (props) => {
   const { movementList } = props;
-  console.log(movementList);
 
   return (
     <>

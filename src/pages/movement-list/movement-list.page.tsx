@@ -4,7 +4,10 @@ import classes from "./movement-list.page.module.css";
 import { AccountVm, MovementVm } from "./movement-list.vm";
 import { MovementListTableComponent } from "./components/movement-list-table.component";
 import { getAccountList, getMovements } from "./api";
-import { mapAccountListFromApiToVm } from "./movement-list.mapper";
+import {
+  mapAccountListFromApiToVm,
+  mapMovementListFromApiToVm,
+} from "./movement-list.mapper";
 import { useParams } from "react-router-dom";
 
 export const MovementListPage: React.FC = () => {
@@ -20,7 +23,9 @@ export const MovementListPage: React.FC = () => {
 
   React.useEffect(() => {
     if (id) {
-      getMovements(id).then((result) => setMovementList(result));
+      getMovements(id).then((result) =>
+        setMovementList(mapMovementListFromApiToVm(result))
+      );
     }
   }, [id]);
 
