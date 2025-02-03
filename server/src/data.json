@@ -23,6 +23,14 @@
       "name": "Ahorro",
       "balance": 8500,
       "lastTransaction": "2019-11-15T08:29:04"
+    },
+    {
+      "iban": "AD34 0290 3929 2085 3717 1W08",
+      "name": "Compras",
+      "type": "1",
+      "balance": 0,
+      "lastTransaction": "2025-02-03T12:28:28.097Z",
+      "id": "_2Xxwaw"
     }
   ],
   "movements": [
@@ -108,5 +116,50 @@
       "accountId": "3"
     }
   ],
-  "transfer": []
+  "transfer": [
+    {
+      "accountId": "1",
+      "iban": "ES9000246912501234567891",
+      "name": "gorjal",
+      "amount": "200",
+      "concept": "compra",
+      "notes": "",
+      "transferDate": "Thu Jan 23 2025",
+      "realTransferDate": "",
+      "id": 1
+    },
+    {
+      "accountId": "2",
+      "iban": "ES9000246912501234567891",
+      "name": "gorjal",
+      "amount": "56",
+      "concept": "drg",
+      "notes": "drg",
+      "transferDate": "Fri Jan 24 2025",
+      "realTransferDate": "",
+      "id": 2
+    },
+    {
+      "accountId": "1",
+      "iban": "ES9000246912501234567891",
+      "name": "gorjal",
+      "amount": "600",
+      "concept": "fth",
+      "notes": "fth",
+      "transferDate": "Mon Jan 27 2025",
+      "realTransferDate": "",
+      "id": 3
+    },
+    {
+      "accountId": "2",
+      "iban": "ES9000246912501234567891",
+      "name": "gorjal",
+      "amount": "45",
+      "concept": "awdaw",
+      "notes": "",
+      "transferDate": "Tue Jan 28 2025",
+      "realTransferDate": "",
+      "id": 4
+    }
+  ]
 }

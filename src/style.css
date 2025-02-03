@@ -171,6 +171,21 @@ input {
   width: 100%;
 }
 
+select {
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+select option {
+  font-size: 15px;
+}
+
 button {
   display: flex;
   justify-content: center;
@@ -183,6 +198,11 @@ button {
   cursor: pointer;
   font-weight: 900;
   transition: all ease 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button:hover {
